@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO ISIK Erkan</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="section-principale">
+            <div class="element-tout">
+                <div>
+                <a href="#">
+                    <img src="images/logo uha.png" alt="Logo">
+                    ISIK Erkan
+                </a>
+            </div>
+                <div class="menu">
+                    <a href="#mes-projets">Projets</a>
+                    <a href="#a-propos">À propos</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <main class="parties-principales">
+        <section class="section-accueil">
+    <div class="accueil-texte">
+        <h1>Bonjour, je m'appelle ISIK Erkan <br> Bienvenue sur mon site !</h1>
+        <p>Je suis actuellement étudiant à l'IUT de Mulhouse en BUT MMI (Métiers du Multimédia de l'Internet). Passionné par le développement web et la création de contenu multimédia, j'acquiers des compétences variées allant du design graphique au développement de sites web interactifs. Mon objectif est de devenir un expert polyvalent capable de réaliser des projets innovants et créatifs. Découvrez certains de mes travaux et expériences ! Si vous aimez ce que vous voyez et avez un projet à coder ou un besoin en design, n'hésitez pas à me contacter.</p>
+        <p class="connecter">Rejoignez-moi sur les autres réseaux :</p>
+        <ul class="icones-sociales">
+            <li><a href="https://www.linkedin.com/in/erkan-isik-devweb-alternance-crea-stage/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/rknn.68/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+        <img src="images/image coupé.png" alt="Ma photo" class="photo-tete">
+    </div>
+</section>
+
+        
+        <!-- Nouvelle section "Mes Projets" -->
+<section class="mes-projets-section" id="mes-projets">
+    <div class="mes-projets-content">
+        <img src="images/SAE105.png" alt="Image Projet" class="mes-projets-image" onclick="openModal('modal1')">
+        <div class="mes-projets-texte">
+            <h2>Mes Projets</h2>
+            <p>Voici quelques-uns des projets sur lesquels j'ai travaillé. Chaque projet m'a permis d'acquérir de nouvelles compétences et d'approfondir mes connaissances en développement web et en design multimédia.</p>
+        </div>
+    </div>
+    <div class="projets-supplementaires">
+        <img src="images/site immo.png" alt="Image Projet 2" class="mes-projets-image" onclick="openModal('modal2')">
+        <img src="images/wordpress.png" alt="Image Projet 3" class="mes-projets-image" onclick="openModal('modal3')">
+    </div>
+</section>
+
+<!-- Modale pour le projet 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Détails du Projet 1</h2>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="images/SAE105.png" alt="Image Projet 1" class="modal-image">
+                <img src="images/projet1-2.png" alt="Image Projet 1 - 2" class="modal-image">
+                <img src="images/projet1-3.png" alt="Image Projet 1 - 3" class="modal-image">
+            </div>
+            <a class="prev" onclick="changeSlide('modal1', -1)">&#10094;</a>
+            <a class="next" onclick="changeSlide('modal1', 1)">&#10095;</a>
+        </div>
+        <p>Au cours de mon premier semestre à l'IUT de Mulhouse, j'ai appris à utiliser les technologies fondamentales du développement web, à savoir <strong>HTML</strong>, <strong>CSS</strong> et <strong>JavaScript</strong>.</p>
+        <p><strong>HTML et CSS</strong> : J'ai acquis une compréhension approfondie de la structure des pages web grâce à <strong>HTML</strong>. J'ai appris à structurer des documents avec des éléments tels que les en-têtes, les paragraphes, les listes, les images et les liens. En parallèle, j'ai maîtrisé <strong>CSS</strong> pour styliser et agencer les pages web de manière attrayante et responsive. J'ai créé quelques pages web en utilisant ces technologies, en mettant l'accent sur la mise en page flexible, les transitions et animations <strong>CSS</strong>, ainsi que sur l'accessibilité.</p>
+        <p><strong>JavaScript</strong> : En plus de <strong>HTML</strong> et <strong>CSS</strong>, j'ai commencé à explorer <strong>JavaScript</strong> pour rendre mes pages web interactives. J'ai appris à utiliser des fonctions basiques pour améliorer l'interactivité des sites web. Un exemple concret de ce que j'ai réalisé est un menu de navigation dynamique et des animations de défilement de page.</p>
+        <p><strong>SAE 1.05 : Produire un site Web</strong> : J'ai conçu et développé un site web complet en <strong>HTML</strong> et <strong>CSS</strong>, intégrant des fonctionnalités interactives avec <strong>JavaScript</strong>.</p>
+        <p>Ce projet m'a permis de consolider mes compétences et de mieux comprendre les pratiques professionnelles du développement web.</p>
+    </div>
+</div>
+
+<!-- Modale pour le projet 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Détails du Projet 2</h2>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="images/site immo.png" alt="Image Projet 2" class="modal-image">
+                <img src="images/projet2-1.png" alt="Image Projet 2 - 2" class="modal-image">
+                <img src="images/projet2-2.png" alt="Image Projet 2 - 3" class="modal-image">
+            </div>
+            <a class="prev" onclick="changeSlide('modal2', -1)">&#10094;</a>
+            <a class="next" onclick="changeSlide('modal2', 1)">&#10095;</a>
+        </div>
+        <p>Durant le deuxième semestre, j'ai approfondi mes compétences en développement web en utilisant des outils avancés comme <strong>SQL</strong> et <strong>Laragon</strong>. Ce projet consistait à créer un site immobilier interactif où les utilisateurs peuvent consulter des informations sur les biens immobiliers disponibles, contacter l'agence et naviguer facilement à travers différentes sections du site.</p>
+        <p><strong>Technologies et Outils Utilisés</strong> :</p>
+        <p><strong>SQL</strong> : Pour gérer la base de données du site, j'ai utilisé <strong>SQL</strong>. J'ai appris à concevoir et à interroger des bases de données relationnelles pour stocker et récupérer les informations sur les biens immobiliers, les clients et les contacts. J'ai écrit des requêtes <strong>SQL</strong> pour extraire des données pertinentes.</p>
+        <p><strong>Laragon</strong> : <strong>Laragon</strong> a été utilisé comme environnement de développement local. Cet outil m'a permis de configurer facilement un serveur local pour héberger le site web et la base de données. Avec <strong>Laragon</strong>, j'ai pu développer et tester les fonctionnalités du site de manière efficace et rapide.</p>
+        <p><strong>HTML et CSS</strong> : J'ai utilisé <strong>HTML</strong> pour structurer les pages du site et <strong>CSS</strong> pour les styliser. J'ai créé des grilles et des mises en page flexibles pour assurer une expérience utilisateur fluide et responsive.</p>
+        <p><strong>JavaScript</strong> : Pour améliorer l'interactivité du site, j'ai utilisé <strong>JavaScript</strong>. J'ai implémenté un slider d'images pour mettre en avant les propriétés disponibles et j'ai ajouté des fonctionnalités de navigation dynamique.</p>
+        <p><strong>Fonctionnalités Réalisées</strong> :</p>
+        <p><strong>Page d'accueil interactive</strong> : J'ai conçu une page d'accueil attrayante avec un menu de navigation, une section de présentation de l'agence et un slider d'images présentant les biens immobiliers.</p>
+        <p><strong>Gestion de la base de données</strong> : J'ai intégré une base de données <strong>MySQL</strong> pour stocker les informations sur les biens immobiliers, les clients et les contacts. Les utilisateurs peuvent consulter les détails des propriétés, filtrer les résultats et envoyer des messages via des formulaires de contact.</p>
+        <p><strong>Formulaire de contact</strong> : J'ai créé un formulaire de contact permettant aux utilisateurs de laisser leurs coordonnées et de décrire leurs besoins en matière de biens immobiliers. Les informations saisies sont enregistrées dans la base de données pour un suivi ultérieur.</p>
+        <p><strong>Projets Réalisés</strong> :</p>
+        <p><strong>Site Web Immobilier</strong> : J'ai conçu et développé un site web complet pour une agence immobilière, incluant des pages d'information, un portfolio des biens disponibles et un formulaire de contact fonctionnel.</p>
+        <p>Ce projet m'a permis de consolider mes compétences en développement web et en gestion de base de données, tout en me familiarisant avec des outils professionnels comme <strong>Laragon</strong>.</p>
+    </div>
+</div>
+
+<!-- Modale pour le projet 3 -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Détails du Projet 3</h2>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="images/wordpress.png" alt="Image Projet 3" class="modal-image">
+                <img src="images/projet3-1.png" alt="Image Projet 3 - 2" class="modal-image">
+                <img src="images/projet3-2.png" alt="Image Projet 3 - 3" class="modal-image">
+            </div>
+            <a class="prev" onclick="changeSlide('modal3', -1)">&#10094;</a>
+            <a class="next" onclick="changeSlide('modal3', 1)">&#10095;</a>
+        </div>
+        <p>Durant le semestre, j'ai exploré et maîtrisé l'utilisation de <strong>WordPress</strong>, un des CMS (Content Management System) les plus populaires pour la création de sites web. Ce projet consistait à créer un site web complet en utilisant <strong>WordPress</strong>, en mettant l'accent sur la mise en page, la personnalisation et l'optimisation des fonctionnalités.</p>
+        <p><strong>Technologies et Outils Utilisés</strong> :</p>
+        <p><strong>WordPress</strong> : J'ai appris à installer et configurer <strong>WordPress</strong>, ainsi qu'à naviguer dans son interface utilisateur. J'ai exploré les thèmes et les plugins pour personnaliser l'apparence et les fonctionnalités du site.</p>
+        <p><strong>Thèmes WordPress</strong> : J'ai utilisé des thèmes <strong>WordPress</strong> pour concevoir l'apparence du site. J'ai appris à personnaliser les thèmes en modifiant les fichiers CSS et en utilisant les options de personnalisation intégrées.</p>
+        <p><strong>Plugins WordPress</strong> : J'ai exploré et installé divers plugins pour ajouter des fonctionnalités au site. Par exemple, j'ai utilisé des plugins pour le SEO, la sécurité, les formulaires de contact et les galeries d'images.</p>
+        <p><strong>Création de Contenu</strong> : J'ai utilisé l'éditeur de blocs de <strong>WordPress</strong> pour créer des pages et des articles. J'ai appris à organiser le contenu en utilisant des blocs, des colonnes et des widgets.</p>
+        <p><strong>Optimisation et SEO</strong> : J'ai appris les bases de l'optimisation pour les moteurs de recherche (SEO) en utilisant des plugins comme <strong>Yoast SEO</strong>. J'ai optimisé les titres, les descriptions, et le contenu pour améliorer le référencement du site.</p>
+        <p><strong>Fonctionnalités Réalisées</strong> :</p>
+        <p><strong>Page d'accueil</strong> : J'ai conçu une page d'accueil attrayante avec un slider d'images, des sections de présentation, et des boutons d'appel à l'action.</p>
+        <p><strong>Pages de Contenu</strong> : J'ai créé plusieurs pages de contenu en utilisant des mises en page flexibles. J'ai utilisé des colonnes et des blocs pour structurer l'information de manière claire et engageante.</p>
+        <p><strong>Formulaire de Contact</strong> : J'ai intégré un formulaire de contact fonctionnel en utilisant un plugin dédié. Les utilisateurs peuvent facilement envoyer des messages via ce formulaire.</p>
+        <p><strong>Blog</strong> : J'ai configuré une section de blog où les articles peuvent être publiés régulièrement. J'ai utilisé des catégories et des étiquettes pour organiser les articles.</p>
+        <p>Ce projet m'a permis de développer une compréhension approfondie de <strong>WordPress</strong> et de ses capacités. J'ai appris à créer des sites web dynamiques et fonctionnels, tout en optimisant leur performance et leur référencement.</p>
+    </div>
+</div>
+
+<div class="container" id="a-propos">
+    <div class="bureau-a-propos" >
+        <h1>À propos de moi</h1>
+        <p>Pour en savoir plus sur moi et mes expériences, vous pouvez consulter mon CV en cliquant sur le bouton ci-dessous.</p>
+        <a href="images/CV ISIK Erkan 2024.pdf" class="cv" target="_blank">Obtenir mon CV</a>
+    </div>
+</div>
+
+<section class="contact" id="contact">
+    <div class="div-interne">
+        <h2>Contactez-moi</h2>
+        <p>Si vous avez une application que vous souhaitez développer, une fonctionnalité que vous avez besoin de créer ou un projet qui nécessite du code. Je serais ravi de vous aider.</p>
+    </div>
+    <form action="" id="formulaire" class="formulaire" method="post">
+        <div class="form-group">
+            <input type="text" class="controle-formulaire" placeholder="Nom complet" name="name" id="nom" maxlength="30" required>
+        </div>
+        <div class="form-group">
+            <input type="email" class="controle-formulaire" name="email" id="email" placeholder="Adresse e-mail" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" class="controle-formulaire" id="message" placeholder="Message" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn-submit">Contactez-moi</button>
+        </div>
+    </form>
+</section>
+
+<section class="popup-travaux" id="popup-portfolio"></section>
+
+
+<section class="popup-travaux" id="popup-portfolio"></section>
+
+<!-- Ajoutez ce script juste avant la balise fermante </body> -->
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+    }
+    
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+
+    let currentSlideIndices = {
+        modal1: 0,
+        modal2: 0,
+        modal3: 0
+    };
+
+    function showSlide(modalId, index) {
+        const slides = document.querySelectorAll(`#${modalId} .carousel-images img`);
+        if (index >= slides.length) {
+            currentSlideIndices[modalId] = 0;
+        } else if (index < 0) {
+            currentSlideIndices[modalId] = slides.length - 1;
+        } else {
+            currentSlideIndices[modalId] = index;
+        }
+        const offset = -currentSlideIndices[modalId] * 100;
+        slides.forEach(slide => {
+            slide.style.transform = `translateX(${offset}%)`;
+        });
+    }
+
+    function changeSlide(modalId, step) {
+        showSlide(modalId, currentSlideIndices[modalId] + step);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        showSlide('modal1', currentSlideIndices.modal1);
+        showSlide('modal2', currentSlideIndices.modal2);
+        showSlide('modal3', currentSlideIndices.modal3);
+    });
+</script>
+</body>
+</html>
